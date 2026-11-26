@@ -1,0 +1,44 @@
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-bottom: 1.75rem;
+}
+
+.filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.95rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.filter-btn:hover {
+  border-color: var(--brand);
+  color: var(--brand);
+}
+
+.filter-btn.is-active {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: #ffffff;
+}
+
+.filter-count {
+  font-size: 0.76rem;
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  background: rgba(24, 24, 27, 0.08);
+}
+
+.filter-btn.is-active .filter-count {
+  background: rgba(255, 255, 255, 0.24);
+  color: #ffffff;
+}

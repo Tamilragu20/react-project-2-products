@@ -1,0 +1,63 @@
+.store-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.store-main {
+  flex: 1;
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.catalog-hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1.25rem;
+  margin-bottom: 1.75rem;
+}
+
+.catalog-eyebrow {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--brand);
+  margin-bottom: 0.3rem;
+}
+
+.catalog-title {
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: -0.02em;
+}
+
+.catalog-subtitle {
+  margin: 0.35rem 0 0;
+  color: var(--text-secondary);
+}
+
+.catalog-count {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+}
+
+@media (max-width: 640px) {
+  .store-main {
+    padding: 1.5rem 1rem 3rem;
+  }
+
+  .catalog-title {
+    font-size: 1.6rem;
+  }
+}

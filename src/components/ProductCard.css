@@ -1,0 +1,113 @@
+.product-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.product-media {
+  position: relative;
+  background: #f4f4f5;
+  padding: 0.75rem;
+}
+
+.product-image {
+  width: 100%;
+  height: 190px;
+  object-fit: contain;
+  display: block;
+  border-radius: 10px;
+}
+
+.product-category {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: rgba(24, 24, 27, 0.86);
+  color: #ffffff;
+  font-size: 0.74rem;
+  font-weight: 600;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+}
+
+.product-body {
+  padding: 1.2rem 1.25rem 1.35rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  flex: 1;
+}
+
+.product-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.product-stock {
+  color: #15803d;
+}
+
+.product-name {
+  margin: 0;
+  font-size: 1.08rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.product-description {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  flex: 1;
+}
+
+.product-footer {
+  margin-top: 0.65rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.product-price {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.save-btn {
+  padding: 0.52rem 0.95rem;
+  border-radius: 8px;
+  border: 1px solid var(--brand);
+  background: var(--brand);
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.save-btn:hover {
+  background: var(--brand-hover);
+}
+
+.save-btn.is-saved {
+  background: var(--brand-soft);
+  color: var(--brand-hover);
+  border-color: #fdba74;
+}
